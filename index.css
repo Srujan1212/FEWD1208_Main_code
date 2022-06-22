@@ -1,28 +1,29 @@
 /* Universal Selector */
+
 /* Iteration-1: Select the universal selector and make its defalut padding to 0px and 
 box-sizing property to border--box*/
-*{
-  
-  padding:0px;
+* {
+  padding: 0px;
   box-sizing: border-box;
 }
 
 /* body selector */
+
 body {
   margin: 0px;
 }
 /* table and para selector */
-td, p {
+
+td,
+p {
   font-size: 16px;
   color: #878787;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
- 
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 /* Iteration-2: Select the type selector img and and give 20px left padding for it */
-
-img{
-  padding-left:20px;
+img {
+  padding-left: 20px;
 }
 
 ul {
@@ -31,10 +32,8 @@ ul {
 }
 
 /* Iteration-3 :  Select the list selector and give its botton margin as 3px*/
-
 li {
   margin: 0 0 3px 0;
-  
 }
 
 /* image selector */
@@ -48,7 +47,8 @@ blockquote {
 }
 
 /* heading selectors */
-h1, h2 {
+h1,
+h2 {
   color: black;
 }
 h1 {
@@ -61,55 +61,56 @@ h2 {
 
 /* Attribute Selectors */
 a {
-  color: #2F82DE;
+  color: #2f82de;
   font-weight: bold;
   text-decoration: none;
 }
 
 /* Iteration-4 : Select an attribute selector for <a> tag with url:https://kalvieducation.com/ and change its text color to grey */
 
-a[href="https://kalvieducation.com/"] {
-  color:grey; 
-
+a[href="https://kalvieducation.com/"]
+{
+  color: grey;
 }
-  /* Combinator */
+
+/* Combinator */
 
 /* Iteration-5 :  Using a Combinator selector style h2 text under news-section class as red in color*/
-.news-section >h2{
+.news-section > h2 {
   color: Red;
 }
 /* whole table selector */
 
-/* Iteration -6: Select the entire page class and set its backgroung to #ccc,width to 100%,top and right padding as 20px  */
 .entire-page {
+  /* Iteration -6: Select the entire page class and set its backgroung to #ccc,width to 100%,top and bottom padding as 20px  */
   background: #ccc;
   width: 100%;
   padding: 20px 0;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   line-height: 1.5;
 }
 /* Iteration-7: Select the grouping selector span and set its text color to red and background color to yellow*/
-span{
-  color:red;
-  background-color:yellow;
+span {
+  color: red;
+  background-color: yellow;
 }
-div{
-  background-color:lightgrey;
- 
+div {
+  background-color: lightgrey;
 }
 /* Iteration-8: Select the grouping selector div and set its text color to black*/
-div{
-  color:black
+div {
+  color: black;
 }
-/* Iteration-9: By using descendant combinator style the span section which is under the div selction by making its font weight bold and font style to italic */
- div span{
- font-weight:bold;
- font-style: italic;
- }
- /* Iteration-10: Using the child selector property select the <li> which is under <ul> and change its text color to black */
 
-ul>li{
-  color:black;
+/* Iteration-9: By using descendant combinator style the span section which is under the div selction by making its font weight bold and font style to italic */
+div span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Iteration-10: Using the child selector property select the <li> which is under <ul> and change its text color to black */
+ul > li {
+  color: black;
 }
 .email-body {
   max-width: 600px;
@@ -118,30 +119,33 @@ ul>li{
   background: white;
   border-collapse: collapse;
 }
+
 /* Iteration-11: select the Pseudo -class selector of <a> tag and give its hover effect and include the properties like color:black and padding 10px */
-a:hover{
+a:hover {
   color: black;
-  padding:10px;
- }
+  padding: 10px;
+}
 
 /* Iteration-12: select the Pseudo -element selector for the first letter a every paragraph and make its font size to 25px*/
- p::first-letter{
+p::first-letter {
   font-size: 25px;
- }
+}
+
 .email-header {
-  background: black; 
+  background: black;
   padding: 30px;
 }
 
 .news-section {
   padding: 20px 30px;
 }
+
 /* wrapping the image */
+
 .img-wrap {
   text-align: center;
   background: #eee;
   padding: 5px;
-  
 }
 pre {
   white-space: pre-wrap;
@@ -152,9 +156,9 @@ pre {
 code {
   font-family: consolas, Menlo, Monaco, monospace;
 }
+
 /* footer class selector */
 /* Iteration -13 : select the footer id and set background color to #eee,font size to 10px, padding 10px and arrange everything in the horizontally centered */
-
 #footer {
   background: #eee;
   padding: 10px;
